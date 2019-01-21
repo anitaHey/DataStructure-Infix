@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="714.0" prefWidth="987.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hw">
+   <children>
+      <RadioButton fx:id="post" layoutX="256.0" layoutY="354.0" mnemonicParsing="false" style="-fx-font-size: 20;" text="後序" />
+      <RadioButton fx:id="pre" layoutX="144.0" layoutY="354.0" mnemonicParsing="false" selected="true" style="-fx-font-size: 20;" text="前序" />
+      <Label layoutX="33.0" layoutY="354.0" style="-fx-font-size: 20;" text="求值" />
+      <Label layoutX="33.0" layoutY="270.0" style="-fx-font-size: 20;" text="中序轉後序" />
+      <Label layoutX="33.0" layoutY="193.0" style="-fx-font-size: 20;" text="中序轉前序" />
+      <Label layoutX="33.0" layoutY="118.0" style="-fx-font-size: 20;" text="陣列" />
+      <Label layoutX="33.0" layoutY="39.0" style="-fx-font-size: 20;" text="輸入中序" />
+      <Label layoutX="33.0" layoutY="664.0" style="-fx-font-size: 20;" text="答案" />
+      <Label fx:id="ans" layoutX="144.0" layoutY="646.0" prefHeight="60.0" prefWidth="475.0" style="-fx-font-size: 20; -fx-border-color: #a39391; -fx-border-width: 3;" />
+      <Button fx:id="trans" layoutX="631.0" layoutY="347.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="278.0" style="-fx-font-size: 20;" text="開始轉換" />
+      <HBox layoutX="144.0" layoutY="99.0" prefHeight="64.0" prefWidth="786.0" style="-fx-border-color: #716e77; -fx-border-width: 2; -fx-font-size: 20;">
+         <children>
+            <Label fx:id="arr0" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="arr1" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="arr2" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="arr3" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="arr4" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="arr5" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="arr6" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="arr7" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="arr8" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="arr9" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="arr10" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="arr11" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+         </children>
+      </HBox>
+      <TextField fx:id="input" layoutX="144.0" layoutY="20.0" prefHeight="65.0" prefWidth="786.0" promptText="請輸入3~12字以內的算式" style="-fx-font-size: 20; -fx-border-color: #716e77; -fx-border-width: 3;" />
+      <HBox layoutX="144.0" layoutY="175.0" prefHeight="64.0" prefWidth="786.0" style="-fx-border-color: #716e77; -fx-border-width: 2; -fx-font-size: 20;">
+         <children>
+            <Label fx:id="pre0" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="pre1" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="pre2" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="pre3" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="pre4" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="pre5" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="pre6" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="pre7" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="pre8" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="pre9" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="pre10" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="pre11" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+         </children>
+      </HBox>
+      <HBox layoutX="144.0" layoutY="258.0" prefHeight="64.0" prefWidth="786.0" style="-fx-border-color: #716e77; -fx-border-width: 2; -fx-font-size: 20;">
+         <children>
+            <Label fx:id="post0" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="post1" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="post2" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="post3" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="post4" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="post5" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="post6" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="post7" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="post8" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="post9" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="post10" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+            <Label fx:id="post11" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="76.0" style="-fx-border-color: #716e77;" />
+         </children>
+      </HBox>
+      <HBox layoutX="33.0" layoutY="403.0" maxHeight="224.0" prefHeight="224.0" prefWidth="924.0">
+         <children>
+            <ScrollPane fitToWidth="true" prefHeight="223.0" prefWidth="308.0" style="-fx-border-color: black;">
+               <content>
+                  <VBox fx:id="pre_view" maxHeight="224.0" prefHeight="219.0" prefWidth="306.0" />
+               </content>
+            </ScrollPane>
+            <ScrollPane fitToWidth="true" prefHeight="223.0" prefWidth="308.0" style="-fx-border-color: black;">
+               <content>
+                  <VBox fx:id="post_view" maxHeight="224.0" prefHeight="220.0" prefWidth="306.0" />
+               </content>
+            </ScrollPane>
+            <ScrollPane fitToWidth="true" prefHeight="223.0" prefWidth="308.0" style="-fx-border-color: black;">
+               <content>
+                  <VBox fx:id="view" maxHeight="224.0" prefHeight="219.0" prefWidth="306.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
